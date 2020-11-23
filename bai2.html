@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập vào : <input type="text" id="growup"><input type="button" value="Change" onclick="grow()"><br>
+Result   : <label id="result"></label>
+</body>
+<script>
+    function grow(){
+        let i = document.getElementById('growup').value;
+        i++;
+        document.getElementById('result').innerHTML = i;
+    }
+</script>
+</html>

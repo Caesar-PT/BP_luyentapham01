@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Bắt đầu" onclick="search()">
+<script>
+
+    let myArr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let myArr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function search() {
+        let x = prompt('Nhap');
+        let index = -1;
+        for (let i = 0; i < myArr1.length; i++) {
+            if (x === myArr1[i])
+                index = i;
+        }
+        if ( index === -1 ) {
+            alert('Khong co ket qua')
+        } else {
+            alert(myArr2[index]);
+        }
+
+    }
+</script>
+
+</body>
+</html>
